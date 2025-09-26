@@ -9,8 +9,8 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://example.com",
-  integrations: [mdx(), sitemap()],
+  site: "https://yznh.dev",
+  integrations: [sitemap()],
 
   vite: {
     plugins: [tailwindcss()],
