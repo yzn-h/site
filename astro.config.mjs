@@ -22,11 +22,16 @@ export default defineConfig({
         name: "IBM Plex Sans Arabic",
         cssVariable: "--font-ibm-plex-sans-arabic",
         provider: fontProviders.google(),
-        weights: [400, 500, 600, 700, 800, 900],
-        subsets: ["latin", "arabic"],
+        weights: [700],
+        subsets: ["arabic"],
       },
     ],
   },
 
-  adapter: cloudflare(),
+  adapter: cloudflare({
+    imageService: "compile",
+  }),
+  build: {
+    inlineStylesheets: "always",
+  },
 });
