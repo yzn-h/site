@@ -27,9 +27,9 @@ export default defineConfig({
     ],
   },
 
-  adapter: cloudflare({
-    imageService: "compile",
-  }),
+  // adapter: cloudflare({
+  //  imageService: "compile",
+  // }),
   build: {
     inlineStylesheets: "always",
   },
